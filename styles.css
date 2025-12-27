@@ -233,7 +233,7 @@ p {
         background-color: var(--bg-light);
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: var(--transition-base);
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: var(--spacing-md) 0;
     }
@@ -650,12 +650,39 @@ p {
 
 @media (prefers-contrast: high) {
     :root {
+        --primary-color: #000000;
+        --secondary-color: #0000EE;
+        --text-dark: #000000;
+        --text-light: #000000;
+        --bg-light: #FFFFFF;
+        --bg-gray: #FFFFFF;
         --border-color: #000000;
+    }
+    
+    .hero {
+        background: #000000;
+        color: #FFFFFF;
+    }
+    
+    .hero-title,
+    .hero-subtitle {
+        color: #FFFFFF;
     }
     
     .nav-link:hover,
     .nav-link:focus {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    
+    .footer {
+        background-color: #000000;
+    }
+    
+    .service-card,
+    .value-card,
+    .contact-item {
+        border: 2px solid #000000;
     }
 }
 
