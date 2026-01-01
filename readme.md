@@ -96,6 +96,16 @@ The website uses standard HTML, CSS, and JavaScript without any build process or
 
 ## Customization
 
+### Logo
+Replace the placeholder logo in `images/logo.svg`:
+1. **Recommended formats**: SVG (best), PNG, or JPG
+2. **Recommended size**: 400x120px or similar ratio for raster images
+3. **Upload your logo**: Replace `images/logo.svg` with your file
+4. **Multiple formats supported**: The site will work with `logo.svg`, `logo.png`, or `logo.jpg`
+5. **See detailed instructions**: Check `images/README.md` for upload methods
+
+The logo will automatically display in the navigation header across all pages with responsive sizing.
+
 ### Colors
 Edit the CSS custom properties in `styles.css`:
 ```css

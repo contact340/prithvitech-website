@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Placeholder Logo for Prithvitech -->
+  <!-- Replace this file with your actual logo image -->
+  
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="#0F5A3C" opacity="0.9"/>
+  
+  <!-- Earth/Leaf icon symbolizing sustainability -->
+  <g transform="translate(30, 30)">
+    <!-- Leaf shape -->
+    <path d="M -8 -8 Q -2 -12, 2 -8 Q 8 -2, 8 4 Q 4 10, 0 8 Q -4 10, -8 4 Q -8 -2, -8 -8 Z" 
+          fill="#FFFFFF" opacity="0.9"/>
+    <path d="M -4 -4 Q 0 -6, 4 -4 Q 6 0, 4 4 Q 0 6, -4 4 Q -6 0, -4 -4 Z" 
+          fill="#2A8D9C" opacity="0.7"/>
+    
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="65" y="35" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="700" fill="#0F5A3C">
+    Prithvitech
+  </text>
+  
+  <!-- Tagline -->
+  <text x="65" y="48" font-family="Open Sans, Arial, sans-serif" font-size="9" fill="#2A8D9C">
+    ESG &amp; Sustainability Consulting
+  </text>
+</svg>
