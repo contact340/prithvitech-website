@@ -184,6 +184,7 @@ p {
     padding: var(--spacing-xs) var(--spacing-sm);
     transition: var(--transition-base);
     border-radius: 4px;
+    white-space: nowrap;
 }
 
 .nav-link:hover,

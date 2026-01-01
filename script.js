@@ -268,6 +268,40 @@
     }
     
     /**
+     * Accordion functionality for Services page
+     */
+    function initAccordions() {
+        const accordionToggles = document.querySelectorAll('.accordion-toggle');
+        
+        accordionToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                // Close all other accordions
+                accordionToggles.forEach(otherToggle => {
+                    if (otherToggle !== this) {
+                        otherToggle.setAttribute('aria-expanded', 'false');
+                        const otherContent = otherToggle.nextElementSibling;
+                        if (otherContent && otherContent.classList.contains('accordion-content')) {
+                            otherContent.classList.remove('active');
+                        }
+                    }
+                });
+                
+                // Toggle current accordion
+                if (isExpanded) {
+                    this.setAttribute('aria-expanded', 'false');
+                    content.classList.remove('active');
+                } else {
+                    this.setAttribute('aria-expanded', 'true');
+                    content.classList.add('active');
+                }
+            });
+        });
+    }
+    
+    /**
      * Initialize all functions when DOM is ready
      */
     function init() {
@@ -277,6 +311,7 @@
         updateCurrentYear();
         initScrollSpy();
         initLazyLoading();
+        initAccordions();
     }
     
     // Initialize when DOM is ready
@@ -287,61 +322,3 @@
     }
     
 })();
-
-/**
- * Accordion functionality for Services page
- */
-function initAccordions() {
-    const accordionToggles = document.querySelectorAll('.accordion-toggle');
-    
-    accordionToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            
-            // Close all other accordions
-            accordionToggles.forEach(otherToggle => {
-                if (otherToggle !== this) {
-                    otherToggle.setAttribute('aria-expanded', 'false');
-                    const otherContent = otherToggle.nextElementSibling;
-                    if (otherContent && otherContent.classList.contains('accordion-content')) {
-                        otherContent.classList.remove('active');
-                    }
-                }
-            });
-            
-            // Toggle current accordion
-            if (isExpanded) {
-                this.setAttribute('aria-expanded', 'false');
-                content.classList.remove('active');
-            } else {
-                this.setAttribute('aria-expanded', 'true');
-                content.classList.add('active');
-            }
-        });
-    });
-}
-
-// Update the init function to include accordions
-const originalInit = init;
-if (typeof init === 'function') {
-    init = function() {
-        originalInit();
-        initAccordions();
-    };
-} else {
-    function init() {
-        initMobileNav();
-        initSmoothScroll();
-        initFormValidation();
-        updateCurrentYear();
-        initScrollSpy();
-        initLazyLoading();
-        initAccordions();
-    }
-}
-
-// Re-initialize if DOM is already loaded
-if (document.readyState !== 'loading') {
-    initAccordions();
-}
