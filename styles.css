@@ -158,6 +158,24 @@ p {
     color: var(--text-dark);
 }
 
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .brand-name {
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -1408,6 +1426,15 @@ textarea:focus {
     
     .brand-tagline {
         font-size: 0.7rem;
+    }
+    
+    .logo {
+        height: 40px;
+        max-width: 150px;
+    }
+    
+    .brand-link {
+        gap: var(--spacing-xs);
     }
 }
 
