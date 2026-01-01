@@ -1,6 +1,6 @@
-# Prithvitech Consulting + Manufacturing Website
+# Prithvitech ESG Consulting Website
 
-A professional, accessible, and mobile-friendly website built with HTML, CSS, and minimal JavaScript.
+A professional, accessible, and mobile-friendly website for ESG and sustainability consulting, built with HTML, CSS, and minimal JavaScript.
 
 ## Features
 
@@ -25,11 +25,20 @@ prithvitech-website/
 ## Sections
 
 1. **Header/Navigation** - Sticky navigation with mobile hamburger menu
-2. **Hero Section** - Eye-catching introduction with call-to-action
-3. **About Section** - Company overview and core values
-4. **Services Section** - Six key services with icons
+2. **Hero Section** - Science-driven ESG & sustainability introduction
+3. **About Section** - Company overview, founder credentials, and core values
+4. **Services Section** - Six ESG consulting services
 5. **Contact Section** - Contact form and information
 6. **Footer** - Quick links and company information
+
+## Services Offered
+
+1. **ESG Strategy, Advisory & Reporting**
+2. **Climate Change, Carbon & Net-Zero Advisory**
+3. **Circular Economy, Green Waste & Resource Management**
+4. **Environmental Impact, LCA & Sustainability Modelling**
+5. **Regulatory, Compliance & Environmental Governance**
+6. **Sustainable Materials, Innovation & Green Manufacturing**
 
 ## Technologies Used
 
@@ -127,7 +136,7 @@ Add or remove sections by editing `index.html` and updating navigation links acc
 
 ## License
 
-© 2024 Prithvitech Consulting + Manufacturing. All rights reserved.
+© 2024 Prithvitech ESG Consulting. All rights reserved.
 
 ## Contact
 
