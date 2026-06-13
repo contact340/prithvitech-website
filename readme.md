@@ -26,7 +26,7 @@ prithvitech-website/
 
 1. **Header/Navigation** - Sticky navigation with mobile hamburger menu
 2. **Hero Section** - Science-driven ESG & sustainability introduction
-3. **About Section** - Company overview, founder credentials, and core values
+3. **About Section** - Company overview and core values
 4. **Services Section** - Six ESG consulting services
 5. **Contact Section** - Contact form and information
 6. **Footer** - Quick links and company information
@@ -140,6 +140,4 @@ Add or remove sections by editing `index.html` and updating navigation links acc
 
 ## Contact
 
-- **Email:** info@prithvitech.com
-- **Phone:** +1 (234) 567-890
-- **Address:** 123 Business Street, Suite 100, City, State 12345
+- **Email:** contact@prithvitech.com
