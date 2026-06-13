@@ -1476,3 +1476,11 @@ textarea:focus {
         max-height: 45px;
     }
 }
+/* LinkedIn Footer Icon Hover Effect */
+.social-link svg:hover {
+    fill: var(--primary-teal, #2A8D9C) !important;
+    transform: scale(1.1);
+}
+.social-link svg {
+    transition: all 0.3s ease;
+}
