@@ -1416,3 +1416,63 @@ textarea:focus {
         font-size: 1.5rem;
     }
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Header Logo Styling */
+.header-logo {
+    max-height: 60px;
+    width: auto;
+    display: block;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Home Page Image Grid */
+.home-about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.home-about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.home-about-text {
+    text-align: left;
+}
+
+@media (max-width: 968px) {
+    .home-about-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .home-about-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        max-height: 45px;
+    }
+}
